@@ -1,0 +1,223 @@
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+/* about start */
+.about {
+  background-color: #2b2b3f;
+}
+
+.content {
+  margin-top: 50px;
+  background-color: #2b2b3f;
+}
+
+.logo {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.tittlepage {
+  color: white;
+}
+/* about end */
+
+.galery {
+  margin-top: 50px;
+}
+
+.img-fluid {
+  margin-bottom: 20px;
+}
+
+/* contact us start */
+
+.informasi {
+  background-color: #2b2b3f;
+}
+
+.dataDiri {
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+/* contact us end */
+
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+  color: #0b63dc;
+}
+
+/* tombol */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+
+/* jumbotron */
+.jumbotron {
+  background-image: url(img/tes.png);
+  background-size: cover;
+  height: 540px;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 75%;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  ); /* membuat image menjadi transparan */
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/* info panel */
+
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  margin-top: -100px;
+  background-color: white;
+  padding: 30px;
+}
+
+.info-panel img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+  margin-top: -5px;
+  font-weight: 200;
+}
+
+/* workingspace */
+.workingspace {
+  margin-top: 100px;
+}
+
+.workingspace h3 {
+  font-size: 52px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.workingspace h3 span {
+  font-weight: 500;
+}
+
+.workingspace p {
+  font-size: 18px;
+  color: #acacac;
+}
+
+.testimoni {
+  margin-top: 100px;
+}
+
+.testimoni h5 {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+}
+
+.testimoni figure img {
+  width: 90px;
+  margin-top: 15px;
+}
+
+.testimoni figure h5 {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  color: #1c2c5d;
+}
+
+.testimoni figure p {
+  font-size: 12px;
+  color: #acacac;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.footer p {
+  color: #acacac;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* dekstop */
+@media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    margin-right: 30px;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #0b63dc;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+  }
+
+  .jumbotron .display-4 {
+    font-size: 62px;
+  }
+
+  .testimoni h5 {
+    font-size: 32px;
+  }
+}
