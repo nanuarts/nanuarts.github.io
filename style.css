@@ -46,13 +46,45 @@
   margin-right: 50px;
   margin-top: 50px;
 }
-.gambar {
-  display: flex;
-  align-items: center;
+
+.icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
 }
 
-.gambar img {
-  margin-right: 100px;
+.icons {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-sizing: 0 5px 15px -5px #00000070;
+  overflow: hidden;
+  position: relative;
+  color: #2890b9;
+}
+
+.icons i {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: #f1f1f1;
+  margin: 10px;
+  border-radius: 30%;
+  box-sizing: 0 5px 15px -5px #00000070;
+  overflow: hidden;
+  position: relative;
+  color: #2890b9;
+}
+
+.icons i {
+  transition: 0.2s linear;
+  font-size: 35px;
+  line-height: 90px;
 }
 
 /* contact us end */
